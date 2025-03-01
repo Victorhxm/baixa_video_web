@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<form method='POST' action='/baixado'>
+<table>
+<p>Cole abaixo a URL</p>
+<tr><td>URL:</td><td><input name='url' type='TEXT' width='80'></td></tr>
+
+</table>
+
+<p><input value='Baixa' type='SUBMIT'></p>
+<p>by Victor Marques</p>
+</form>
+
+{% endblock %}
