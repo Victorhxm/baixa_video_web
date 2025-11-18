@@ -19,7 +19,7 @@ def do_url() ->  'html':
    link = url
    video = YouTube(link,on_progress_callback=on_progress)
    stream = video.streams.get_highest_resolution()
-   DOWNLOADS = Path.home() / 'Downloads'
+   DOWNLOADS = Path.home() / 'C:\temp'
    stream.download(DOWNLOADS)
     
    return render_template('ok.html', url = url, )
